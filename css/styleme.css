@@ -1,0 +1,27 @@
+body {
+  margin: 2;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1;
+  background-color: rgb(49, 48, 48);
+  color: white;
+}
+p > span {
+  color: orange;
+  font-style: italic;
+}
+h1,
+h3 {
+  color: rgb(6, 6, 48);
+}
+article img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+header {
+  background-color: rgb(104, 104, 114);
+}
+footer {
+  background-color: rgb(104, 104, 114);
+}
