@@ -39,3 +39,9 @@ div {
 span {
   font-weight: bolder;
 }
+ul {
+  list-style-image: url('../images/pie_icon.gif');
+}
+ol {
+  list-style-type: lower-roman;
+}
