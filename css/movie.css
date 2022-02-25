@@ -4,6 +4,8 @@ body {
   font-size: 100%;
   line-height: 1;
   background-image: url('../images/background.png');
+  overflow-x: hidden;
+  height: 100vh;
 }
 #header {
   background-image: url('../images/bannerbg.png');
@@ -113,6 +115,6 @@ dl > dt {
 }
 .validator {
   position: relative;
-  left: 95%;
-  bottom: 30%;
+  left: 95.5%;
+  bottom: 7%;
 }
