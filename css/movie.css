@@ -1,116 +1,147 @@
-body {
+*,
+*:after,
+*:before {
   margin: 0;
   padding: 0;
-  font-size: 100%;
-  line-height: 1;
-  background-image: url('../images/background.png');
-  overflow-x: hidden;
-  height: 100vh;
+  outline: 0;
 }
-#header {
+body {
+  line-height: 1;
+  font-size: 100%;
+  background-image: url('../images/background.png');
+  font-size: 8pt;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+header {
   background-image: url('../images/bannerbg.png');
 }
-#header img {
-  margin-left: 25%;
-  margin-right: 25%;
+div.header_inner img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
 }
-h1 {
-  text-align: center;
-  font-weight: bold;
+.jumbotron {
+  margin: 12px 0;
+}
+.jumbotron h1 {
   font-size: 24pt;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-family: Tahoma, Verdana, sans-serif;
+  text-align: center;
   text-shadow: 3px 3px #999999;
 }
-div#main {
-  width: 800px;
+main {
   border: 4px gray solid;
-  border-radius: 20px;
-  margin: auto;
-  position: relative;
+  border-radius: 20pt;
+  overflow: hidden;
+  display: flex;
 }
-div.mainDiv {
-  display: inline-block;
+main,
+.header_inner {
+  width: 100%;
+  margin: 0 auto;
 }
-div#mainLeft {
-  width: 550px;
-  float: left;
+.main-left,
+.main-left {
+  width: 100%;
 }
-div#mainRight {
-  width: 250px;
-  background-color: #a2b964;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-div#subheader {
+.main-left-header {
   background-image: url('../images/rbg.png');
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.main-left-header-right .rate {
   font-size: 48pt;
   color: red;
-  border-top-left-radius: 15px;
-  vertical-align: bottom;
+  font-weight: bold;
 }
-.imageB {
-  border-top-right-radius: 15px;
+.main-left-review-col-left,
+.main-left-review-col-right {
+  width: 47%;
+  margin: 1.5%;
 }
-.imageB1 {
-  border-top-left-radius: 15px;
-}
-div.container {
-  display: inline-grid;
-  grid-template-columns: auto auto;
-  gap: 10px;
-}
-div.box1 {
-  margin: 2%;
-  width: 94%;
-  border-radius: 10px;
-  border: 2px grey solid;
-  background-color: #e8dc9b;
-}
-.box1 img,
-.box2 img {
+/* .main-left-review {
+  display: inline-block;
+  /* float: left; 
+} */
+.main-left-1 {
   float: left;
-  margin-top: 8px;
-  margin-right: 5px;
-  margin-left: 8px;
 }
-.critisize {
-  font-style: italic;
-}
-.qout {
-  margin: 8px;
-  font-size: 8pt;
-  font-weight: bold;
-}
-.qout1 {
-  font-size: 10pt;
-}
-dl > dt {
-  font-weight: bold;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.info {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 8pt;
-}
-#ull {
-  list-style-type: none;
-}
-.navFooter {
-  background-color: #a2b964;
-  bottom: 0px;
-  position: absolute;
-  text-align: center;
-  width: 550px;
-  border-bottom-left-radius: 15px;
+.comment {
+  background-color: #e8dc9b;
+  border: 2px gray solid;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 8px;
 }
 .valid {
   opacity: 50%;
   display: block;
 }
 .validator {
-  position: relative;
+  position: fixed;
   left: 95.5%;
-  bottom: 7%;
+  bottom: 0%;
+}
+img#css-valid {
+  margin-bottom: 20px;
+}
+.reviews {
+  font-weight: bold;
+  font-size: 8pt;
+}
+.reviewer .critisize {
+  font-style: italic;
+}
+.comment img,
+.author img {
+  float: left;
+  margin-right: 5px;
+}
+.author {
+  margin-bottom: 20px;
+}
+.main-right {
+  background-color: #a2b964;
+}
+.main-right-bottom {
+  padding: 10pt;
+  font-size: 8pt;
+  font-family: Arial, sans-serif;
+}
+dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+dd {
+  margin-left: 40px;
+  margin-top: 3px;
+}
+li {
+  list-style-type: none;
+  margin-top: 2px;
+  margin-left: 40px;
+}
+div#main-bottom-bar {
+  background-color: #a2b964;
+  position: relative;
+  clear: left;
+  top: 260px;
+  height: 30px;
+  align-items: center;
+}
+div#main-bottom-bar > p {
+  margin-left: 75%;
+}
+@media screen and (min-width: 900px) {
+  main,
+  .header_inner {
+    width: 800px;
+  }
+  .main-left {
+    width: 550px;
+  }
+  .main-right {
+    width: 250px;
+  }
 }

@@ -61,11 +61,10 @@ main,
   margin: 1.5%;
 }
 /* .main-left-review {
-  display: flex;
-  float: left;
+  display: inline-block;
+  /* float: left; 
 } */
 .main-left-1 {
-  /* display: inline-block; */
   float: left;
 }
 .comment {
@@ -74,6 +73,18 @@ main,
   border-radius: 10px;
   padding: 8px;
   margin-bottom: 8px;
+}
+.valid {
+  opacity: 50%;
+  display: block;
+}
+.validator {
+  position: fixed;
+  left: 95.5%;
+  bottom: 0%;
+}
+img#css-valid {
+  margin-bottom: 20px;
 }
 .reviews {
   font-weight: bold;
