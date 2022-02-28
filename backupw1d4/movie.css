@@ -55,16 +55,23 @@ div#subheader {
   border-top-left-radius: 15px;
 }
 div.container {
-  display: inline-grid;
-  grid-template-columns: auto auto;
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+  font: bold;
+  font-size: 8pt;
+  padding: 8px;
+  margin-top: 5px;
+}
+div.container > * {
+  flex: 47%;
 }
 div.box1 {
-  margin: 2%;
-  width: 94%;
   border-radius: 10px;
   border: 2px grey solid;
   background-color: #e8dc9b;
+  padding-left: 5px;
+  margin-top: 20px;
 }
 .box1 img,
 .box2 img {
@@ -72,6 +79,9 @@ div.box1 {
   margin-top: 8px;
   margin-right: 5px;
   margin-left: 8px;
+}
+.box2 {
+  display: flex;
 }
 .critisize {
   font-style: italic;

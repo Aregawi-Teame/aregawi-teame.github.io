@@ -39,10 +39,14 @@ a {
 a:hover {
   text-decoration: underline;
 }
-ol {
+/* ol {
   transform: rotate(180deg);
   margin-left: 15px;
 }
 ol > li {
   transform: rotate(-180deg);
+} */
+ol {
+  display: flex;
+  flex-direction: column-reverse;
 }

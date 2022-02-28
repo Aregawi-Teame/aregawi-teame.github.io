@@ -1,0 +1,43 @@
+button.reset {
+  border-color: rgb(9, 9, 190);
+  color: rgb(9, 9, 190);
+}
+button.reset,
+button.cancel,
+button.add {
+  margin-right: 35px;
+  float: right;
+}
+.navbar-customclass {
+  background-color: rgb(68, 176, 248);
+}
+button.cancel {
+  border-color: rgb(250, 84, 84);
+  color: rgb(250, 84, 84);
+}
+button.add {
+  border-color: rgb(40, 196, 188);
+  color: rgb(40, 196, 188);
+}
+h2,
+label,
+.form-select option,
+select.form-select {
+  color: rgb(114, 113, 113);
+}
+.signout {
+  background-color: white;
+  margin-left: 15px;
+  border: 0;
+  padding: 4px 6px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 4px;
+}
+nav,
+.navbar-nav .nav-item .nav-link {
+  color: white;
+}
+.ver {
+  border-right: 1px white solid;
+  margin-left: 40px;
+}

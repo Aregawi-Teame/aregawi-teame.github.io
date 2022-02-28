@@ -1,0 +1,136 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+  line-height: 1;
+  font-size: 100%;
+  background-image: url('../images/background.png');
+  font-size: 8pt;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+header {
+  background-image: url('../images/bannerbg.png');
+}
+div.header_inner img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+.jumbotron {
+  margin: 12px 0;
+}
+.jumbotron h1 {
+  font-size: 24pt;
+  font-weight: bold;
+  font-family: Tahoma, Verdana, sans-serif;
+  text-align: center;
+  text-shadow: 3px 3px #999999;
+}
+main {
+  border: 4px gray solid;
+  border-radius: 20pt;
+  overflow: hidden;
+  display: flex;
+}
+main,
+.header_inner {
+  width: 100%;
+  margin: 0 auto;
+}
+.main-left,
+.main-left {
+  width: 100%;
+}
+.main-left-header {
+  background-image: url('../images/rbg.png');
+  display: flex;
+  align-items: center;
+}
+.main-left-header-right .rate {
+  font-size: 48pt;
+  color: red;
+  font-weight: bold;
+}
+.main-left-review-col-left,
+.main-left-review-col-right {
+  width: 47%;
+  margin: 1.5%;
+}
+/* .main-left-review {
+  display: flex;
+  float: left;
+} */
+.main-left-1 {
+  /* display: inline-block; */
+  float: left;
+}
+.comment {
+  background-color: #e8dc9b;
+  border: 2px gray solid;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.reviews {
+  font-weight: bold;
+  font-size: 8pt;
+}
+.reviewer .critisize {
+  font-style: italic;
+}
+.comment img,
+.author img {
+  float: left;
+  margin-right: 5px;
+}
+.author {
+  margin-bottom: 20px;
+}
+.main-right {
+  background-color: #a2b964;
+}
+.main-right-bottom {
+  padding: 10pt;
+  font-size: 8pt;
+  font-family: Arial, sans-serif;
+}
+dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+dd {
+  margin-left: 40px;
+  margin-top: 3px;
+}
+li {
+  list-style-type: none;
+  margin-top: 2px;
+  margin-left: 40px;
+}
+div#main-bottom-bar {
+  background-color: #a2b964;
+  position: relative;
+  clear: left;
+  top: 260px;
+  height: 30px;
+  align-items: center;
+}
+div#main-bottom-bar > p {
+  margin-left: 75%;
+}
+@media screen and (min-width: 900px) {
+  main,
+  .header_inner {
+    width: 800px;
+  }
+  .main-left {
+    width: 550px;
+  }
+  .main-right {
+    width: 250px;
+  }
+}
