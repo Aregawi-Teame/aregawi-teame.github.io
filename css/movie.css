@@ -47,6 +47,7 @@ div#subheader {
   font-size: 48pt;
   color: red;
   border-top-left-radius: 15px;
+  vertical-align: bottom;
 }
 .imageB {
   border-top-right-radius: 15px;
