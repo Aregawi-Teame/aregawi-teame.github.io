@@ -15,11 +15,6 @@ body {
 header {
   background-image: url('../images/bannerbg.png');
 }
-div.header_inner img {
-  margin: 0 auto;
-  display: block;
-  max-width: 100%;
-}
 .jumbotron {
   margin: 12px 0;
 }

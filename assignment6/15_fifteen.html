@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment number fifteen</title>
+    <style>
+        #clock{
+            width: 30%;
+            margin: 20vh auto;
+            border: 4px solid cornflowerblue;
+            height: 100px;
+            text-align: center;
+            padding-top: 5%;
+            border-radius: 20px;
+            color: rgb(3, 100, 107);
+            font-size: 2em;
+            background-color: burlywood;
+        }
+    </style>
+    <script>
+        function refreshClock(){
+            var refresh = 1000; // refresh rate in milli seconds
+            setTimeout('displayClock()',refresh);
+        }
+        function displayClock(){
+            var current = new Date();
+            var ampm = current.getHours()>=12? "PM" : "AM";
+            var month = current.getMonth()+1;
+            month=month.toString();
+            month = month.length==1 ? 0+month : month
+            var hours = current.getHours()%12;
+            hours = hours!=0?hours:12;
+            hours = hours.toString().length==1 ? 0+hours.toString():hours;
+            var minute = current.getMinutes().toString();
+            minute=minute.length==1?0+minute:minute;
+            var seconds = current.getSeconds().toString();
+            seconds=seconds.length==1?0+seconds:seconds;
+            var date = current.getDate().toString();
+            date = date.length==1?0+date:date;
+            var currentFormat = current.getFullYear() + "-" + date +"-"+month+"  "+hours+":"+minute+":"+seconds+ " "+ampm;
+            document.getElementById('clock').innerHTML=currentFormat;
+            refreshClock();
+        }
+    </script>
+</head>
+<body onload=displayClock();>
+    <div id="clock">
+
+    </div>
+</body>
+</html>
