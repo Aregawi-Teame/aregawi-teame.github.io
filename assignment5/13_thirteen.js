@@ -1,3 +1,4 @@
+"use strict";
 var printFibo = function(n,num1,num2){
     fib = [];
     if(n>=2){

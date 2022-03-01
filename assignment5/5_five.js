@@ -1,3 +1,4 @@
+"use strict";
 //Method one using reduce function
 var reverse = s =>[].reduceRight.call(s,(a,b)=>a+b);
 console.log(reverse("jag testar"));

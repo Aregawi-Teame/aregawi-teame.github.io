@@ -1,6 +1,7 @@
+"use strict";
 // Method one using imperetive programming
 function computeSumOfEvenSquares (arr){
-    var sum = 0;
+    let sum = 0;
     for (let i = 0; i < arr.length; i++) {
         if(a[i] % 2 == 0) {
             sum += Math.pow(arr[i],2);

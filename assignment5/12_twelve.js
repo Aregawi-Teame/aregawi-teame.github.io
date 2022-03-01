@@ -1,3 +1,4 @@
+"use strict";
 function findSecondBiggest(arr){
     let larg = arr[0];
     let secondLarg = larg;

@@ -1,3 +1,4 @@
+"use strict";
 // Method 1 using for loop
 var printOddNumbersOnly = function(nums){
     let ods =[];

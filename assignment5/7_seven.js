@@ -1,3 +1,4 @@
+"use strict";
 //Method one using for loop
 var filterLongWords = function(words, len){
     let longestWords =[];
