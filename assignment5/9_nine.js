@@ -14,3 +14,8 @@ const printOddNumbersOnly1 = nums=>nums.filter(num=>num%2!=0);
 
 console.log(printOddNumbersOnly([5,4,8,13,7,6]));
 console.log(printOddNumbersOnly1([5,4,8,13,7,6]));
+
+const sumCalc = function() {
+    return Array.from(arguments).reduce((sum,n) => sum+n,0);
+}
+console.log(sumCalc(1,2,3));

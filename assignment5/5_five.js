@@ -7,9 +7,12 @@ console.log(reverse("jag testar"));
 var reverse1 = function(s){
     let str = s;
     let reversed ="";
+    // for(let i=str.length;i>0;i--){
+    //     let newstr = str.substring(0,i);
+    //     reversed+=newstr.substr(-1,1);
+    // }
     for(let i=str.length;i>0;i--){
-        let newstr = str.substring(0,i);
-        reversed+=newstr.substr(-1,1);
+        reversed+= s[i];
     }
     return reversed;
 }

@@ -1,5 +1,7 @@
 "use strict";
 function findSecondBiggest(arr){
+    if(arr.length<2)
+    throw new Error ("Invalid array. Must have at least two elements");
     let larg = arr[0];
     let secondLarg = larg;
     for(let i=1;i<arr.length;i++){

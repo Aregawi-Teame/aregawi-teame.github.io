@@ -20,10 +20,7 @@
         }
     </style>
     <script>
-        function refreshClock(){
-            var refresh = 1000; // refresh rate in milli seconds
-            setTimeout('displayClock()',refresh);
-        }
+        
         function displayClock(){
             var current = new Date();
             var ampm = current.getHours()>=12? "PM" : "AM";
@@ -41,8 +38,9 @@
             date = date.length==1?0+date:date;
             var currentFormat = current.getFullYear() + "-" + date +"-"+month+"  "+hours+":"+minute+":"+seconds+ " "+ampm;
             document.getElementById('clock').innerHTML=currentFormat;
-            refreshClock();
+            setInterval(displayClock,1000);
         }
+        window.onload = displayClock;
     </script>
 </head>
 <body onload=displayClock();>
