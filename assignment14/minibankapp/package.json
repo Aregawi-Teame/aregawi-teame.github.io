@@ -1,0 +1,22 @@
+{
+  "name": "minibankapp",
+  "version": "1.0.0",
+  "description": "Bank of America",
+  "main": "server.js",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "server": "nodemon server"
+  },
+  "author": "Aregawi T. Arefe",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^3.3.7",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.6",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,3 @@
+{
+    "mongoURI":"mongodb+srv://mini:mini@minibank.yfdk3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
